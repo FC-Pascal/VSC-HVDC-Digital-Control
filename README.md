@@ -1,3 +1,6 @@
+## 📄 **[Read the full technical report here](https://fc-pascal.github.io/VSC-HVDC-Digital-Control/Oloore_Issa_Abayomi_VSC_HVDC_Digital_Twin_Report.pdf)**
+
+
 # VSC-HVDC Terminal Digital Twin & Control System
 
 **Author:** Oloore Issa Abayomi   
