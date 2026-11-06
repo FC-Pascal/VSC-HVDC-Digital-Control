@@ -15,7 +15,7 @@ This repository contains a closed-loop digital twin of a Voltage Source Converte
 ### Baseline Architecture
 ![Baseline VSC Architecture](docs/closed_loop_architecture.png)
 
-The initial physical plant establishes the core HVDC mechanics[cite: 20]:
+The initial physical plant establishes the core HVDC mechanics:
 * **AC Grid:** 400V RMS, 50Hz 3-phase programmable source.
 * **Buffer:** 10mH AC line reactors to suppress high-frequency PWM switching ripple.
 * **Converter:** 6-pulse IGBT/Diode Universal Bridge.
@@ -27,7 +27,7 @@ The initial physical plant establishes the core HVDC mechanics[cite: 20]:
 To pull real power from the grid without saturating the PWM logic, the digital brain commands the phase angle ($\delta$) rather than voltage amplitude. 
 * A discrete-time PI controller is initially tuned with highly gentle parameters (**$K_p = 0.001$, $K_i = 0.01$**) to prevent capacitive overvoltage.
 * The PI output is restricted to a maximum 15-degree lag.
-* **Result:** The system executes a perfectly smooth, critically damped charge cycle, settling at exactly 700V without any dangerous overshoot[cite: 21].
+* **Result:** The system executes a perfectly smooth, critically damped charge cycle, settling at exactly 700V without any dangerous overshoot.
 
 ---
 
